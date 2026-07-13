@@ -43,3 +43,5 @@ _autosave-*
 production/*
 
 pcb-moduloDidaticoSCADA-backups/*
+
+*.zip
