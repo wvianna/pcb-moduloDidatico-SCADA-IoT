@@ -1,11 +1,22 @@
-# Projeto: Esquema Eletrônico Automatizado
+# Projeto: PCB Módulo Didático SCADA/IoT
 
 ## Descrição do Projeto
-Este repositório contém o esquema eletrônico de um sistema de controle automatizado desenvolvido no KiCad. O circuito foi projetado para processar sinais de sensores (entradas), realizar a lógica de controle por meio de um microcontrolador/processador central e atuar sobre o ambiente através de dispositivos de potência e sinalização (saídas).
+Este projeto tem como objetivo fornecer uma plataforma de aprendizado para estudantes e entusiastas de automação industrial, sistemas SCADA e Internet das Coisas (IoT). A placa de circuito impresso (PCB) foi projetada para ser utilizada em laboratórios educacionais, permitindo a prática de conceitos teóricos em um ambiente controlado.
+
+A PCB integra um **NodeMCU v2 (ESP8266)** com os seguintes componentes onboard:
+
+- **Potenciômetro** — sinal analógico variável (simula sensor analógico)
+- **Sensor DS18B20** — temperatura digital via 1-Wire
+- **Driver de potência (transistor/resistência de aquecimento)** — carga controlada por PWM
+- **Driver para servomotores** — canais PWM para azimute e elevação
+- **Interface RS485 (MAX485)** — comunicação serial industrial half-duplex
+- **Conectores para coils** — saídas digitais para relés ou buzzer
+- **Conectores para entradas digitais** — contato seco ou switch onboard
+- **LEDs de sinalização** — indicação visual de estado
 
 ---
 
-> 🧩 **Projeto do firmware:** Este porjeto foi desenvolvido para o fimware disponível em [https://github.com/wvianna/pcb-moduloDidatico-SCADA-IoT-firmware](https://github.com/wvianna/pcb-moduloDidatico-SCADA-IoT-firmware). O firmware todos I/O, sensores e interface RS485 em um único hardware, facilitando a montagem e reprodução em sala de aula.
+> 🧩 **Projeto do firmware:** Este projeto foi desenvolvido para o firmware disponível em [github.com/wvianna/pcb-moduloDidatico-SCADA-IoT-firmware](https://github.com/wvianna/pcb-moduloDidatico-SCADA-IoT-firmware). O firmware gerencia todos os I/Os, sensores e interface RS485, implementando comunicação via **Modbus TCP/RTU**, **MQTT** e **OPC UA PubSub** — com seleção de protocolo via interface web.
 
 ---
 
@@ -14,32 +25,154 @@ Este repositório contém o esquema eletrônico de um sistema de controle automa
 
 ---
 
-## 🛠️ Arquitetura do Sistema: Entradas e Saídas
+## 🧠 Visão Geral da Arquitetura
 
-O correto funcionamento deste circuito depende da interação entre os pinos de leitura, processamento e atuação. Abaixo estão mapeadas as principais relações de I/O (Input/Output) do diagrama:
+```mermaid
+flowchart LR
+  subgraph PCB["Placa PCB (Hardware)"]
+    direction TB
+    NODE[NodeMCU ESP8266]
+    SEN[Sensores<br/>ADC + DS18B20]
+    ATU[Atuadores<br/>Coils + PWM + Resistência]
+    RS[RS485 MAX485]
+    IN[Entradas Digitais]
+  end
 
-### 1. Interfaces de Entrada (Mapeamento de Sensores e Comandos)
-As entradas são responsáveis por captar as grandezas físicas ou comandos do usuário e convertê-los em sinais elétricos legíveis pelo controlador:
-* **Sensores de Campo:** Conectores dedicados para a recepção de sinais analógicos/digitais vindos dos sensores periféricos.
-* **Barramentos de Comunicação:** Linhas de recepção de dados (RX, SDA, SCL) preparadas para comunicação com módulos externos.
-* **Circuito de Feedback/Supervisão:** Malhas de leitura que monitoram o estado das próprias saídas para proteção contra sobrecarga.
+  subgraph FW["Firmware (software)"]
+    REG[Modelo Interno<br/>de Registradores]
+    PROT[Protocolo Ativo<br/>Modbus / MQTT / OPC UA]
+    WEB[Servidor Web<br/>de Configuração]
+  end
 
-### 2. Interfaces de Saída (Mapeamento de Atuadores e Sinalização)
-As saídas traduzem as decisões tomadas pelo bloco de processamento em ações físicas ou feedback visual:
-* **Módulos de Atuação de Potência:** Saídas digitais isoladas ou acopladas a drivers (transistores/relés) para controle de carga.
-* **Indicadores Visuais (LEDs):** Sinalização de status do sistema (Ligado, Erro, Processando dados).
-* **Barramentos de Transmissão:** Linhas de envio de dados (TX) para telemetria ou telas de interface (I2C/SPI).
+  subgraph EXT["Mundo Externo"]
+    SCADA[SCADA / IHM]
+    BRK[Broker MQTT]
+    NRED[Node-RED]
+  end
+
+  NODE --> REG
+  SEN --> REG
+  REG --> ATU
+  REG --> IN
+  REG --> PROT
+  WEB --> REG
+  PROT --> SCADA
+  PROT --> BRK
+  PROT --> NRED
+  RS -.-> SCADA
+```
+
+---
+
+## 📋 Mapeamento de I/Os Físicos
+
+A tabela abaixo relaciona cada funcionalidade da PCB ao pino do NodeMCU e ao registro Modbus correspondente. Este mapeamento é idêntico para todos os protocolos (Modbus, MQTT e OPC UA).
+
+### Saídas Discretas (Coils)
+
+| Endereço Modbus | Função | Pino NodeMCU | GPIO | Componente na PCB |
+| ---: | --- | --- | --- | --- |
+| 00001 | Saída discreta 1 | D0 | GPIO16 | Conector para relé/buzzer |
+| 00002 | Saída discreta 2 | TX | GPIO1 | Conector para relé/buzzer |
+
+### Entradas Discretas (Discrete Inputs)
+
+| Endereço Modbus | Função | Pino NodeMCU | GPIO | Componente na PCB |
+| ---: | --- | --- | --- | --- |
+| 10001 | Entrada discreta 1 | D8 | GPIO15 | Switch onboard ou contato seco externo |
+| 10002 | Entrada discreta 2 | RX | GPIO3 | Switch onboard ou contato seco externo |
+
+> **Nota:** A entrada discreta 1 (ED1 / D8) também funciona como *boot pin* para forçar o modo de setup — basta colocá-la em nível baixo e reiniciar a placa.
+
+### Entradas Analógicas (Input Registers)
+
+| Endereço Modbus | Função | Pino NodeMCU | Faixa | Componente na PCB |
+| ---: | --- | --- | ---: | --- |
+| 30001 | ADC (potenciômetro) | A0 | 0..1023 | Potenciômetro onboard |
+| 30002 | DS18B20 (temperatura) | D2 / GPIO4 | 0..1250 (x10 °C) | Sensor DS18B20 onboard |
+
+### Saídas PWM (Holding Registers)
+
+| Endereço Modbus | Função | Pino NodeMCU | GPIO | Faixa | Componente na PCB |
+| ---: | --- | --- | --- | ---: | --- |
+| 40001 | PWM azimute | D7 | GPIO13 | 0..1023 | Driver para servomotor |
+| 40002 | PWM elevação | D3 | GPIO0 | 0..1023 | Driver para servomotor |
+| 40003 | PWM resistência de aquecimento | D1 | GPIO5 | 0..1023 | Transistor + resistor de aquecimento onboard |
+
+### Interface RS485 (Modbus RTU)
+
+| Sinal MAX485 | Pino NodeMCU | GPIO |
+| --- | --- | --- |
+| RO (receptor) | D5 | GPIO14 |
+| DI (driver) | D6 | GPIO12 |
+| DE + RE (direção) | D4 | GPIO2 |
+
+---
+
+## 🔌 Diagrama de Blocos da PCB
+
+```mermaid
+flowchart TD
+  subgraph PCB["PCB Módulo Didático SCADA/IoT"]
+    MCU[NodeMCU ESP8266]
+
+    subgraph ENTRADAS["Entradas"]
+      POTE[Potenciômetro<br/>A0 / ADC]
+      DS18[DS18B20<br/>D2 / 1-Wire]
+      SW1[Switch ED1<br/>D8 / GPIO15]
+      SW2[Switch ED2<br/>RX / GPIO3]
+    end
+
+    subgraph SAIDAS["Saídas"]
+      C1[Coil 1<br/>D0 / GPIO16]
+      C2[Coil 2<br/>TX / GPIO1]
+      SRV1[Servo Azimute<br/>D7 / PWM]
+      SRV2[Servo Elevação<br/>D3 / PWM]
+      AQUE[Resistência<br/>D1 / PWM]
+    end
+
+    subgraph COMUM["Comunicação"]
+      RS485[MAX485<br/>RS485 Half-Duplex]
+    end
+
+    subgraph SINAL["Sinalização"]
+      LED[LED Config<br/>D4 / GPIO2]
+    end
+
+    MCU --- ENTRADAS
+    MCU --- SAIDAS
+    MCU --- RS485
+    MCU --- SINAL
+  end
+```
+
+---
+
+## ⚡ Especificações Elétricas
+
+| Parâmetro | Valor |
+| --- | --- |
+| Alimentação da placa | 5V DC (via USB ou conector) |
+| Regulador onboard | 3,3V para o NodeMCU |
+| Nível lógico dos GPIOs | 3,3V |
+| Corrente máxima por GPIO | ~12 mA (com resistor de limitação) |
+| Tensão no barramento RS485 | Diferencial (A/B) |
+| Temperatura do DS18B20 | -55°C a +125°C |
+| Faixa do ADC | 0..3,3V (10 bits, 0..1023) |
 
 ---
 
 ## 💻 Necessidade de Firmware
 
-> ⚠️ **Nota Importante de Implementação:** > Este hardware **não é puramente analógico**. A placa foi projetada ao redor de uma arquitetura programável, o que significa que o circuito impresso isolado não desempenhará nenhuma função sem o seu respectivo **Firmware**.
+> ⚠️ **Nota Importante:** Este hardware **não é puramente analógico**. A placa foi projetada ao redor de uma arquitetura programável — o circuito impresso isolado não desempenha nenhuma função sem o respectivo **firmware**.
 
-O firmware a ser desenvolvido para este projeto deve contemplar os seguintes requisitos de software:
-1. **Inicialização (Setup):** Configuração correta dos registradores, direções dos pinos de I/O (Inputs como alta impedância/Pull-up e Outputs como Push-Pull) e taxas de transmissão dos barramentos (Baud Rate).
-2. **Lógica de Controle (Loop principal):** Algoritmo responsável por ler as variáveis de entrada, aplicar filtros digitais (para evitar *debounce* ou ruídos) e tomar a decisão de acionamento das saídas.
-3. **Malha de Segurança:** Rotinas de interrupção de hardware para desligar as saídas imediatamente caso um comportamento anômalo seja detectado nas entradas de supervisão.
+O firmware disponível em [pcb-moduloDidatico-SCADA-IoT-firmware](https://github.com/wvianna/pcb-moduloDidatico-SCADA-IoT-firmware) implementa:
+
+1. **Inicialização (Setup):** Configuração dos registradores, direção dos pinos de I/O e taxas de transmissão dos barramentos.
+2. **Loop principal cooperativo:** Leitura cíclica de sensores, atualização do modelo interno de registradores e aplicação nas saídas físicas — sem uso de `delay()` bloqueante.
+3. **Servidor web de configuração:** Interface para definir SSID, IP, protocolo ativo (Modbus/MQTT/OPC UA) e parâmetros de comunicação, acessível via modo AP.
+4. **Pilhas de comunicação:** Modbus TCP (porta 502), Modbus RTU (RS485), MQTT (PubSubClient) e OPC UA PubSub sobre MQTT.
+5. **Persistência em LittleFS:** Configuração salva em arquivo texto na flash, com validação e fallback para valores padrão.
 
 ---
 
@@ -50,4 +183,20 @@ O firmware a ser desenvolvido para este projeto deve contemplar os seguintes req
 ├── meu-projeto.kicad_pro   # Arquivo de gerenciamento do projeto KiCad
 ├── meu-projeto.kicad_sch   # Folha do desenho esquemático
 ├── meu-projeto.kicad_pcb   # Layout da placa de circuito impresso
+├── docs/
+│   ├── mapeamentopinosmb.txt  # Mapa de pinos em formato CSV
+│   └── requisitos.txt         # Requisitos elétricos e funcionais
+├── firmware/                  # Submódulo do firmware
 └── .gitignore              # Filtro de arquivos temporários do KiCad
+```
+
+---
+
+## 🔗 Links Relacionados
+
+| Recurso | Link |
+| --- | --- |
+| Repositório do firmware | [github.com/wvianna/pcb-moduloDidatico-SCADA-IoT-firmware](https://github.com/wvianna/pcb-moduloDidatico-SCADA-IoT-firmware) |
+| Documentação do firmware | README do firmware |
+| Esquema elétrico | `esquema.pdf` neste repositório |
+| Mapa de pinos (CSV) | `docs/mapeamentopinosmb.txt` |
