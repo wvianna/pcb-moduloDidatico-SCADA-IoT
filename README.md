@@ -64,7 +64,14 @@ flowchart LR
 
 ---
 
-## 📋 Mapeamento de I/Os Físicos
+## � Pinout do NodeMCU
+
+A imagem abaixo mostra a numeração dos pinos do **NodeMCU v2 (ESP8266)** utilizada no projeto. 
+![Pinout NodeMCU v2 - Projeto](imagens/pinout_nodemcu_projeto.png)
+
+---
+
+## �📋 Mapeamento de I/Os Físicos
 
 A tabela abaixo relaciona cada funcionalidade da PCB ao pino do NodeMCU e ao registro Modbus correspondente. Este mapeamento é idêntico para todos os protocolos (Modbus, MQTT e OPC UA).
 
