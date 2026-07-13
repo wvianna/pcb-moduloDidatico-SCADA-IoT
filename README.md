@@ -3,8 +3,14 @@
 ## Descrição do Projeto
 Este repositório contém o esquema eletrônico de um sistema de controle automatizado desenvolvido no KiCad. O circuito foi projetado para processar sinais de sensores (entradas), realizar a lógica de controle por meio de um microcontrolador/processador central e atuar sobre o ambiente através de dispositivos de potência e sinalização (saídas).
 
+---
+
+> 🧩 **Projeto do firmware:** Este porjeto foi desenvolvido para o fimware disponível em [https://github.com/wvianna/pcb-moduloDidatico-SCADA-IoT-firmware](https://github.com/wvianna/pcb-moduloDidatico-SCADA-IoT-firmware). O firmware todos I/O, sensores e interface RS485 em um único hardware, facilitando a montagem e reprodução em sala de aula.
+
+---
+
 **Autor:** William da Silva Vianna  
-**Software Utilizado:** KiCad (v6 ou superior)
+**Software Utilizado:** KiCad (v9 ou superior)
 
 ---
 
