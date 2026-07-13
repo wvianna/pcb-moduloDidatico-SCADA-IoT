@@ -1,0 +1,43 @@
+# ==============================================================================
+# KiCad Gitignore Template
+# ==============================================================================
+
+# --- Arquivos Temporários e de Backup ---
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*~
+_autosave-*
+*.tmp
+
+# --- Arquivos de Cache e Resgate ---
+*-cache.lib
+*-rescue.lib
+
+# --- Arquivos de Trava (Lock Files) ---
+*.lck
+
+# --- Arquivos de Fabricação e Saída (Gerbers/BOM/Netlists) ---
+# Se você quiser salvar seus Gerbers no Git, comente ou remova as linhas abaixo.
+*.gbr
+*.drl
+*.rpt
+*.csv
+*.xml
+*.net
+*.pos
+
+# --- Pastas de Saída Comuns ---
+[Gg]erber/
+[Gg]erbers/
+[Bb]om/
+[Pp]lots/
+[Cc]adstar/
+
+# --- Arquivos do Visualizador 3D ---
+# Ignora arquivos gerados se você exportar para STEP/VRML na pasta do projeto
+*.step
+*.stp
+*.wrl
+
+production/*

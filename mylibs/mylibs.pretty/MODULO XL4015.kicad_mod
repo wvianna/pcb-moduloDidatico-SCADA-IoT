@@ -1,0 +1,147 @@
+(footprint "MODULO XL4015"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "92aaa1a1-df0b-4695-a8e9-c6689ef89843")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "MODULO XL4015"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "ce634224-1768-4537-90a0-bb996fc4509a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b076ccf9-abe9-46d1-8991-d17963fe63ff")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "76d88a28-6b56-42d1-a6ee-f8968760d897")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "137bfcb3-18e3-4e58-a760-9b8816f2a70b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -25.627 -10.5)
+		(end 25.373 15.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "52b5827a-a09c-4a39-973b-cb28d85fdbeb")
+	)
+	(fp_rect
+		(start -25.777 -10.65)
+		(end 25.523 15.65)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "2e02cb6f-e58f-46ba-9594-70d24904ee20")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "c4642341-fb12-4c46-8165-aeea8c457bc2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at -23.627 -8.5)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6958a006-a195-42d5-bb61-e53942dc790b")
+	)
+	(pad "2" thru_hole rect
+		(at -23.627 13.5)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5ea5c623-f163-43dd-907d-065c5b1d83f9")
+	)
+	(pad "3" thru_hole rect
+		(at 23.373 -8.5)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "346fcc85-c402-458b-b9fc-5ce17d0b1988")
+	)
+	(pad "4" thru_hole rect
+		(at 23.373 13.5)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6028f815-e9bd-4629-9bc0-d374c7d7a4f1")
+	)
+	(model "/home/marllon/Documents/Bolsa_Polo/bibliotecas-kicad/libs/mylibs.3dshapes/MODULO_XL4015_ StepDown .step"
+		(offset
+			(xyz -25.6 -15.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
