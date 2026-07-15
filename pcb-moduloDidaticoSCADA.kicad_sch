@@ -3698,16 +3698,6 @@
 		)
 		(uuid "23b70384-718b-4e58-a8b2-062c1f17b656")
 	)
-	(label "EA1{slash}A0{slash}ADC"
-		(at 260.096 61.722 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "26fc6d1f-f08d-4f81-b9ce-bb11ae258ed4")
-	)
 	(label "DERE_485{slash}D4{slash}IO2"
 		(at 200.406 60.706 0)
 		(effects
@@ -3797,6 +3787,16 @@
 			(justify right bottom)
 		)
 		(uuid "499a8831-491a-4ad3-8d0a-52e7adc18596")
+	)
+	(label "3V3"
+		(at 260.096 61.722 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4a48d869-9d05-4364-b45a-726e4f9e61e8")
 	)
 	(label "EA1{slash}A0{slash}ADC"
 		(at 172.974 53.086 180)

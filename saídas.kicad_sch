@@ -4618,6 +4618,16 @@
 	)
 	(wire
 		(pts
+			(xy 117.348 108.204) (xy 117.348 112.014)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3a9cccc-334d-4985-9a4c-85ab048938a7")
+	)
+	(wire
+		(pts
 			(xy 193.802 99.314) (xy 193.802 101.346)
 		)
 		(stroke
@@ -4705,6 +4715,16 @@
 			(justify right bottom)
 		)
 		(uuid "0f8eaed6-daf2-4132-be46-3174878ec4d4")
+	)
+	(label "IN5"
+		(at 54.61 53.848 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1d93498c-a9fa-4e2e-a534-16f0a851d956")
 	)
 	(label "IN2"
 		(at 46.228 90.17 180)
@@ -4835,6 +4855,16 @@
 			(justify left bottom)
 		)
 		(uuid "bb3081f5-e634-4efa-a1ed-3f62f33efbf1")
+	)
+	(label "IN5"
+		(at 117.348 90.424 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c9d1b130-721e-46df-adcc-9f52bf689cc3")
 	)
 	(label "IN2"
 		(at 46.482 40.132 0)
@@ -5008,6 +5038,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 117.348 94.234 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0244c291-8e76-48ec-b6d8-1f301bf424fb")
+		(property "Reference" "D12"
+			(at 121.158 94.5514 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 121.158 97.0914 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D5.0mm"
+			(at 117.348 94.234 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 117.348 94.234 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 117.348 94.234 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6fd64ec9-b7c5-4dcf-9f67-cd414fc99d60")
+		)
+		(pin "2"
+			(uuid "03ca03ef-6d58-494d-b444-838b8c3890d9")
+		)
+		(instances
+			(project "pcb-moduloDidaticoSCADA"
+				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/4eb53ab9-9d45-4380-91d5-f64cda0bd8d0"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 240.03 40.64 0)
 		(unit 1)
@@ -5071,6 +5171,103 @@
 			(project "pcb-moduloDidaticoSCADA"
 				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/4eb53ab9-9d45-4380-91d5-f64cda0bd8d0"
 					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "a_jlclib:0603WAF1201T5E")
+		(at 117.348 103.124 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0ff43c30-6bcc-4c5a-85f2-4a8ba54b9783")
+		(property "Reference" "R36"
+			(at 119.888 101.8539 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0603WAF1201T5E"
+			(at 119.888 104.3939 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "jlclib:R0603"
+			(at 124.968 103.124 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_1-2KR-1201-1_C22765.html"
+			(at 127.508 103.124 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1.2KΩ (1201) ±1%"
+			(at 117.348 103.124 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(厚声)"
+			(at 130.048 103.124 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1201T5E"
+			(at 132.588 103.124 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C22765"
+			(at 135.128 103.124 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9c50a82a-2248-4d75-adb2-efd8494358af")
+		)
+		(pin "1"
+			(uuid "094be193-92a4-4f9f-ac26-f9866b4e6bbd")
+		)
+		(instances
+			(project "pcb-moduloDidaticoSCADA"
+				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/4eb53ab9-9d45-4380-91d5-f64cda0bd8d0"
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -7488,6 +7685,72 @@
 			(project ""
 				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/4eb53ab9-9d45-4380-91d5-f64cda0bd8d0"
 					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 117.348 112.014 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "83f7d06f-9bd5-48c5-8d12-8e4b5f564dbe")
+		(property "Reference" "#PWR069"
+			(at 117.348 118.364 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 117.348 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 117.348 112.014 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 117.348 112.014 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 117.348 112.014 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b65442ec-e637-4790-b832-1bf739ee7e9d")
+		)
+		(instances
+			(project "pcb-moduloDidaticoSCADA"
+				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/4eb53ab9-9d45-4380-91d5-f64cda0bd8d0"
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
