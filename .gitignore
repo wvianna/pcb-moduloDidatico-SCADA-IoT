@@ -44,4 +44,4 @@ production/*
 
 pcb-moduloDidaticoSCADA-backups/*
 
-*.zip
+pcb*.zip
