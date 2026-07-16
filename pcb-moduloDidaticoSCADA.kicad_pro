@@ -58,7 +58,44 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "annular_width|136670000|101942000|795aeb70-b4f8-48d4-8986-29f33b1c9a80|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "annular_width|136670000|145542000|dbf80059-493d-431e-9448-77191aa0158f|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "annular_width|157570000|101942000|000c3935-f739-42d1-8756-8a2f8371c5ed|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "annular_width|157570000|145542000|24c84576-1a93-4045-89d7-38a52346d28f|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "courtyards_overlap|138249600|139802800|db20008f-2199-42d9-85b4-75d81899b5c5|f2748272-f0d2-4c52-8e9d-41d73605cc49",
+          ""
+        ],
+        [
+          "courtyards_overlap|138855000|129995000|7dc8b728-66d4-42ed-b2ce-f4985de97588|db20008f-2199-42d9-85b4-75d81899b5c5",
+          ""
+        ],
+        [
+          "courtyards_overlap|142533600|139802800|b35ccb95-568d-4f1f-b087-d279defae008|db20008f-2199-42d9-85b4-75d81899b5c5",
+          ""
+        ],
+        [
+          "courtyards_overlap|144683600|139802800|14bae8f7-72f5-4078-b328-1fb4e15ebd7e|db20008f-2199-42d9-85b4-75d81899b5c5",
+          ""
+        ],
+        [
+          "starved_thermal|104425000|67922000|ce056c0d-a38b-46fc-ad58-d8e064d20be3|db52c8d8-fba0-415e-810b-3036fc829c1b|F.Cu",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -98,11 +135,11 @@
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
-        "padstack": "warning",
+        "padstack": "ignore",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
-        "silk_over_copper": "warning",
+        "silk_edge_clearance": "ignore",
+        "silk_over_copper": "ignore",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
@@ -257,7 +294,15 @@
         ""
       ],
       [
+        "power_pin_not_driven|820420|828040|dd7a522b-c798-4a11-9b78-db6f10f92b78|00000000-0000-0000-0000-000000000000|/d871af36-cd7a-4e62-8016-cc5e63560ec7|/d871af36-cd7a-4e62-8016-cc5e63560ec7|",
+        ""
+      ],
+      [
         "power_pin_not_driven|820420|843280|dd7a522b-c798-4a11-9b78-db6f10f92b78|00000000-0000-0000-0000-000000000000|/d871af36-cd7a-4e62-8016-cc5e63560ec7|/d871af36-cd7a-4e62-8016-cc5e63560ec7|",
+        ""
+      ],
+      [
+        "power_pin_not_driven|853440|881380|5e4f4698-ae12-413f-ab15-c558aef29d72|00000000-0000-0000-0000-000000000000|/d871af36-cd7a-4e62-8016-cc5e63560ec7|/d871af36-cd7a-4e62-8016-cc5e63560ec7|",
         ""
       ]
     ],
@@ -546,6 +591,9 @@
       "+5V": [
         "POWER"
       ],
+      "+5V_SERVO": [
+        "POWER"
+      ],
       "/12V_IN": [
         "POWER"
       ],
@@ -565,6 +613,9 @@
         "POWER"
       ],
       "Net-(D7-K)": [
+        "POWER"
+      ],
+      "Net-(D8-A)": [
         "POWER"
       ]
     },

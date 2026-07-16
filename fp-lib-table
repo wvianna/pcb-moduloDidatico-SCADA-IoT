@@ -4,4 +4,5 @@
   (lib (name "jlclib0603")(type "KiCad")(uri "${KIPRJMOD}/mylibs/jlclib0603.pretty")(options "")(descr ""))
   (lib (name "mylib")(type "KiCad")(uri "${KIPRJMOD}/mylibs/mylib.pretty")(options "")(descr ""))
   (lib (name "jlclib")(type "KiCad")(uri "${KIPRJMOD}/jlclib/jlclib.pretty")(options "")(descr ""))
+  (lib (name "imagens")(type "KiCad")(uri "${KIPRJMOD}/imagens")(options "")(descr ""))
 )

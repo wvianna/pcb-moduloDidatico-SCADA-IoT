@@ -1255,6 +1255,12 @@
 		(uuid "916dff27-48d4-4763-9844-6889b495c14b")
 	)
 	(junction
+		(at 185.166 145.542)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04f9fda1-435f-43f3-a091-7c23861aea2a")
+	)
+	(junction
 		(at 106.68 62.992)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1289,6 +1295,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3837c439-19b1-4d62-a397-469e4cd7948e")
+	)
+	(junction
+		(at 147.066 119.888)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d5a9cc0-3fc3-4b7a-bdbe-4ac65b022835")
 	)
 	(junction
 		(at 154.94 83.312)
@@ -1330,6 +1342,16 @@
 	)
 	(wire
 		(pts
+			(xy 151.892 143.002) (xy 147.066 143.002)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d3b2015-d010-4627-8c9e-f21de024a2de")
+	)
+	(wire
+		(pts
 			(xy 115.824 80.772) (xy 106.68 80.772)
 		)
 		(stroke
@@ -1347,6 +1369,16 @@
 			(type default)
 		)
 		(uuid "0f6dc396-9fd7-47ed-a1a8-bd9260e89344")
+	)
+	(wire
+		(pts
+			(xy 185.674 132.334) (xy 192.786 132.334)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ca38d5b-ec5a-4aea-90a0-67b6241ddf57")
 	)
 	(wire
 		(pts
@@ -1430,6 +1462,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.066 119.888) (xy 141.478 119.888)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "674966a6-8bc0-4ae0-906c-8fc774492a6b")
+	)
+	(wire
+		(pts
 			(xy 165.354 101.092) (xy 165.354 102.87)
 		)
 		(stroke
@@ -1490,6 +1532,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.166 145.542) (xy 185.166 147.574)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d58bb09-7932-4dfa-bac5-bb9a1bc9d5fe")
+	)
+	(wire
+		(pts
 			(xy 106.68 62.992) (xy 116.586 62.992)
 		)
 		(stroke
@@ -1497,6 +1549,26 @@
 			(type default)
 		)
 		(uuid "8d9b5eab-6a9c-4272-943d-69e0741eb18c")
+	)
+	(wire
+		(pts
+			(xy 174.752 145.542) (xy 185.166 145.542)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f1b3a79-c21c-4fdd-8f93-2f8b3a56851e")
+	)
+	(wire
+		(pts
+			(xy 185.166 145.542) (xy 185.674 145.542)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9825f107-4c30-4abf-94fc-96f60f082163")
 	)
 	(wire
 		(pts
@@ -1520,7 +1592,7 @@
 	)
 	(wire
 		(pts
-			(xy 150.876 119.888) (xy 141.478 119.888)
+			(xy 150.876 119.888) (xy 147.066 119.888)
 		)
 		(stroke
 			(width 0)
@@ -1537,6 +1609,26 @@
 			(type default)
 		)
 		(uuid "bfd2ff3f-1f6c-47cc-89a4-50122630a903")
+	)
+	(wire
+		(pts
+			(xy 185.674 145.542) (xy 185.674 132.334)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c05e226b-2151-4fa6-891a-10e3967e2146")
+	)
+	(wire
+		(pts
+			(xy 147.066 143.002) (xy 147.066 119.888)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2f7a35d-f4fa-4eb9-9fc5-a111c0a605e3")
 	)
 	(wire
 		(pts
@@ -1588,6 +1680,16 @@
 		)
 		(uuid "fd2b2cfa-1123-4247-be9b-cc386c05f105")
 	)
+	(label "5V_SERVO"
+		(at 176.022 145.542 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "10abea03-5da6-48f3-b2e9-0f84c8902ae4")
+	)
 	(label "7V5"
 		(at 171.704 83.312 0)
 		(effects
@@ -1618,6 +1720,16 @@
 		)
 		(uuid "a9d8c02d-6b2d-46c1-9607-7973de5fefb5")
 	)
+	(label "5V_SERVO"
+		(at 151.892 145.542 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bfef1ed1-b2cf-4af0-87fb-93932a941bb0")
+	)
 	(label "5V"
 		(at 150.876 122.428 180)
 		(effects
@@ -1638,6 +1750,17 @@
 			(justify right)
 		)
 		(uuid "016dec71-8111-43df-8afa-a91df3ecf387")
+	)
+	(hierarchical_label "5V_SERVO"
+		(shape output)
+		(at 192.786 132.334 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "03f0c0c0-3239-4cef-bde6-73b9df05dd08")
 	)
 	(hierarchical_label "7,5V_OUT"
 		(shape output)
@@ -1755,6 +1878,75 @@
 			(project "pcb-moduloDidaticoSCADA"
 				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/c8e2f891-c1a6-4289-9136-24a9cda3131a"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 185.166 151.384 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0c7edfbd-9604-446b-95f9-893bc2b39a09")
+		(property "Reference" "C12"
+			(at 173.99 151.638 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uFx50V"
+			(at 173.99 154.178 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
+			(at 186.1312 155.194 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 185.166 151.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 185.166 151.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "322033bf-e3d5-48dc-9b27-87dd52076bc6")
+		)
+		(pin "1"
+			(uuid "9c2f8e44-8837-4c97-a924-560afff5be50")
+		)
+		(instances
+			(project "pcb-moduloDidaticoSCADA"
+				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/c8e2f891-c1a6-4289-9136-24a9cda3131a"
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -2430,6 +2622,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 185.166 155.194 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59e77eb0-7645-4e87-b28c-e2550a63aa63")
+		(property "Reference" "#PWR069"
+			(at 185.166 161.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 185.166 160.274 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.166 155.194 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.166 155.194 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 185.166 155.194 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "15ffe152-1e53-470d-94dd-89132e5d7318")
+		)
+		(instances
+			(project "pcb-moduloDidaticoSCADA"
+				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/c8e2f891-c1a6-4289-9136-24a9cda3131a"
+					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 165.354 104.902 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2489,6 +2747,107 @@
 			(project "PCB_catraca_IFF"
 				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/c8e2f891-c1a6-4289-9136-24a9cda3131a"
 					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "a_jlclib:AMS1117-5.0")
+		(at 163.322 145.542 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "799bfdf7-8716-4ea2-a2f7-66b6d3c398fc")
+		(property "Reference" "U8"
+			(at 163.322 155.956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AMS1117-5.0"
+			(at 163.322 153.416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "jlclib:SOT-223_L6.5-W3.5-P2.30-LS7.0-BR"
+			(at 163.322 135.382 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Low-Dropout-Regulators-LDO_AMS_AMS1117-5-0_AMS1117-5-0_C6187.html"
+			(at 163.322 132.842 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 163.322 145.542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Advanced Monolithic Systems"
+			(at 163.322 130.302 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "AMS1117-5.0"
+			(at 163.322 127.762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C6187"
+			(at 163.322 125.222 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d11e6c7-09e9-45a4-aaea-b4990d0c77ee")
+		)
+		(pin "4"
+			(uuid "a0bcb848-fb91-4fab-a72e-bf8012bd8c67")
+		)
+		(pin "2"
+			(uuid "90aed5b3-d394-4bf7-bceb-1125dfd93a95")
+		)
+		(pin "3"
+			(uuid "31c2460a-eaf0-4cce-bd2c-2ae46ce74f2c")
+		)
+		(instances
+			(project "pcb-moduloDidaticoSCADA"
+				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/c8e2f891-c1a6-4289-9136-24a9cda3131a"
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -2690,6 +3049,72 @@
 			(project "pcb-moduloDidaticoSCADA"
 				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/c8e2f891-c1a6-4289-9136-24a9cda3131a"
 					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 151.892 148.082 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b7bd072c-fa69-48ca-b23d-24ca6b254d88")
+		(property "Reference" "#PWR070"
+			(at 151.892 154.432 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 151.892 153.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 151.892 148.082 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 151.892 148.082 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 151.892 148.082 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c2ea0e9a-dd0f-4552-9189-b09034326314")
+		)
+		(instances
+			(project "pcb-moduloDidaticoSCADA"
+				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/c8e2f891-c1a6-4289-9136-24a9cda3131a"
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
