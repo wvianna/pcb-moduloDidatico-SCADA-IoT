@@ -593,140 +593,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "a_jlclib:0603WAF1001T5E"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "0603WAF1001T5E"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "jlclib:R0603"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_1KR-1001-1_C21190.html"
-				(at 0 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "1KΩ (1001) ±1%"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "UNI-ROYAL(厚声)"
-				(at 0 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MPN" "0603WAF1001T5E"
-				(at 0 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part" "C21190"
-				(at 0 -17.78 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Resistors"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "0603WAF1001T5E_0_1"
-				(rectangle
-					(start -2.54 1.02)
-					(end 2.54 -1.02)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "a_jlclib:0603WAF1201T5E"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -945,6 +811,140 @@
 				)
 			)
 			(symbol "0603WAF4701T5E_0_1"
+				(rectangle
+					(start -2.54 1.02)
+					(end 2.54 -1.02)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "a_jlclib:0805W8F1001T5E"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "0805W8F1001T5E"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "jlclib:R0805"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_1KR-1001-1_C17513.html"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1KΩ (1001) ±1%"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "UNI-ROYAL(厚声)"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "0805W8F1001T5E"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C17513"
+				(at 0 -17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Resistors"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "0805W8F1001T5E_0_1"
 				(rectangle
 					(start -2.54 1.02)
 					(end 2.54 -1.02)
@@ -1431,6 +1431,12 @@
 		(uuid "52b9a389-3532-415a-987d-d216c37661fa")
 	)
 	(junction
+		(at 167.64 72.898)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5bdabc43-6a71-43fa-b352-430f677f2351")
+	)
+	(junction
 		(at 130.81 48.006)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1443,22 +1449,10 @@
 		(uuid "8753650a-e308-435d-8219-d10386e32c1c")
 	)
 	(junction
-		(at 167.64 67.818)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8fca591e-16f2-4fef-9a4b-c725cd39916a")
-	)
-	(junction
 		(at 128.27 58.166)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "963e084c-7ca2-406d-acca-cb0aee611155")
-	)
-	(junction
-		(at 167.64 114.808)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "97443420-e4e6-47f3-87e4-f486b99af03c")
 	)
 	(junction
 		(at 130.302 97.028)
@@ -1484,9 +1478,15 @@
 		(color 0 0 0 0)
 		(uuid "e05e93b3-685b-48fd-be3f-5fadc011d77b")
 	)
+	(junction
+		(at 167.64 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed5a76cb-e00d-4c97-b4c9-7825f0e5a4cc")
+	)
 	(wire
 		(pts
-			(xy 167.64 119.888) (xy 167.64 124.968)
+			(xy 167.64 119.888) (xy 167.64 123.19)
 		)
 		(stroke
 			(width 0)
@@ -1523,16 +1523,6 @@
 			(type default)
 		)
 		(uuid "136ed623-bfff-43ed-93b2-7ebf8d2135d5")
-	)
-	(wire
-		(pts
-			(xy 167.64 67.818) (xy 177.8 67.818)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c9be20d-7709-4308-b5b7-11f98bcbaac0")
 	)
 	(wire
 		(pts
@@ -1603,16 +1593,6 @@
 			(type default)
 		)
 		(uuid "5cb094af-5983-46ff-b85b-b3702a18771e")
-	)
-	(wire
-		(pts
-			(xy 167.64 99.822) (xy 167.64 102.108)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d98a853-e988-4ff9-b764-9fb841b7dff3")
 	)
 	(wire
 		(pts
@@ -1756,16 +1736,6 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 102.108) (xy 177.8 114.808)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b930ac1-c258-4a1a-ad1e-cbc50750ae60")
-	)
-	(wire
-		(pts
 			(xy 130.81 48.006) (xy 128.27 48.006)
 		)
 		(stroke
@@ -1796,6 +1766,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 102.108) (xy 177.8 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4f65c32-4a2b-4318-bd11-998b9082a53c")
+	)
+	(wire
+		(pts
 			(xy 99.06 77.978) (xy 99.06 76.708)
 		)
 		(stroke
@@ -1813,6 +1793,16 @@
 			(type default)
 		)
 		(uuid "ae0dd93d-8f65-4949-8832-524b0143ebc4")
+	)
+	(wire
+		(pts
+			(xy 177.8 72.898) (xy 167.64 72.898)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b25ce8b3-0726-4d3d-9a80-cb9653309d69")
 	)
 	(wire
 		(pts
@@ -1876,16 +1866,6 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 114.808) (xy 167.64 114.808)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5955eb8-a379-4079-aeeb-576452873f9b")
-	)
-	(wire
-		(pts
 			(xy 124.46 48.006) (xy 124.46 51.816)
 		)
 		(stroke
@@ -1916,13 +1896,13 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 67.818) (xy 177.8 81.788)
+			(xy 167.64 123.19) (xy 177.8 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d418519d-37c4-4f10-80dd-9e4baca78755")
+		(uuid "cae9625c-9f6b-4c03-8f85-88e040a78179")
 	)
 	(wire
 		(pts
@@ -1943,6 +1923,16 @@
 			(type default)
 		)
 		(uuid "d4aa0937-093e-4c3d-92d6-7c0c5240bf6b")
+	)
+	(wire
+		(pts
+			(xy 167.64 123.19) (xy 167.64 124.968)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db5b62a6-8608-42b6-ac34-a71ba3a7c76c")
 	)
 	(wire
 		(pts
@@ -1974,6 +1964,16 @@
 		)
 		(uuid "f7eab7a4-5044-414c-adb7-9aa2b9a03715")
 	)
+	(wire
+		(pts
+			(xy 177.8 81.788) (xy 177.8 72.898)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc11a6aa-e036-417f-933d-2df5ce965a20")
+	)
 	(label "3V3_IN"
 		(at 99.06 76.708 0)
 		(effects
@@ -1995,7 +1995,7 @@
 		(uuid "59107142-4fe1-4ba5-b805-5006a590293f")
 	)
 	(label "3V3_IN"
-		(at 167.64 99.822 0)
+		(at 167.64 112.268 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2025,7 +2025,7 @@
 		(uuid "d9f699fc-ca37-4e9b-9dbb-8781ee3fb983")
 	)
 	(label "3V3_IN"
-		(at 167.64 55.118 0)
+		(at 167.64 65.278 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2165,103 +2165,6 @@
 			(project "PCB_catraca_IFF"
 				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/f1226fa3-f7d0-4ae3-8454-02e618f0f28b"
 					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "a_jlclib:0603WAF1001T5E")
-		(at 144.78 81.788 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "07e7c2e6-b068-4a94-897f-c65edeb429e7")
-		(property "Reference" "R11"
-			(at 147.32 80.5179 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "0603WAF1001T5E"
-			(at 147.32 83.0579 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "jlclib:R0603"
-			(at 152.4 81.788 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_1KR-1001-1_C21190.html"
-			(at 154.94 81.788 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1KΩ (1001) ±1%"
-			(at 144.78 81.788 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 157.48 81.788 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "0603WAF1001T5E"
-			(at 160.02 81.788 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C21190"
-			(at 162.56 81.788 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "723c2517-3f2b-45d9-8b35-717f6f12e0bd")
-		)
-		(pin "1"
-			(uuid "adae2cab-5bc1-45cf-ba0b-f75695136d7d")
-		)
-		(instances
-			(project ""
-				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/f1226fa3-f7d0-4ae3-8454-02e618f0f28b"
-					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -2486,17 +2389,17 @@
 		)
 	)
 	(symbol
-		(lib_id "a_jlclib:0603WAF4701T5E")
-		(at 167.64 107.188 90)
+		(lib_id "a_jlclib:0805W8F1001T5E")
+		(at 144.78 128.778 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3109febb-e9e0-4583-8fd7-7f9bbd3a738f")
-		(property "Reference" "R16"
-			(at 169.926 105.9179 90)
+		(uuid "1e0f0268-f34f-4a29-a792-fa2290cfcea5")
+		(property "Reference" "R13"
+			(at 147.574 127.5079 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2504,8 +2407,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0603WAF4701T5E"
-			(at 169.926 108.4579 90)
+		(property "Value" "0805W8F1001T5E"
+			(at 147.574 130.0479 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2513,8 +2416,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "jlclib:R0603"
-			(at 175.26 107.188 0)
+		(property "Footprint" "jlclib:R0805"
+			(at 152.4 128.778 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2522,8 +2425,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_4-7KR-4701-1_C23162.html"
-			(at 177.8 107.188 0)
+		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_1KR-1001-1_C17513.html"
+			(at 154.94 128.778 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2531,8 +2434,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "4.7KΩ (4701) ±1%"
-			(at 167.64 107.188 0)
+		(property "Description" "1KΩ (1001) ±1%"
+			(at 144.78 128.778 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2541,7 +2444,104 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 180.34 107.188 0)
+			(at 157.48 128.778 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F1001T5E"
+			(at 160.02 128.778 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C17513"
+			(at 162.56 128.778 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ae85ccbd-d9d3-4ba1-b41e-d269335472cc")
+		)
+		(pin "1"
+			(uuid "d474fdab-9cf5-47db-8f0f-d31e14baddb5")
+		)
+		(instances
+			(project "pcb-moduloDidaticoSCADA"
+				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/f1226fa3-f7d0-4ae3-8454-02e618f0f28b"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "a_jlclib:0603WAF4701T5E")
+		(at 167.64 130.048 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3109febb-e9e0-4583-8fd7-7f9bbd3a738f")
+		(property "Reference" "R16"
+			(at 169.926 128.7779 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0603WAF4701T5E"
+			(at 169.926 131.3179 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "jlclib:R0603"
+			(at 175.26 130.048 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_4-7KR-4701-1_C23162.html"
+			(at 177.8 130.048 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.7KΩ (4701) ±1%"
+			(at 167.64 130.048 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(厚声)"
+			(at 180.34 130.048 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2550,7 +2550,7 @@
 			)
 		)
 		(property "MPN" "0603WAF4701T5E"
-			(at 182.88 107.188 0)
+			(at 182.88 130.048 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2559,7 +2559,7 @@
 			)
 		)
 		(property "LCSC Part" "C23162"
-			(at 185.42 107.188 0)
+			(at 185.42 130.048 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2890,6 +2890,200 @@
 		)
 	)
 	(symbol
+		(lib_id "a_jlclib:0805W8F1001T5E")
+		(at 144.78 91.948 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70aeeb23-539d-43b9-8f0e-8c9dc8995228")
+		(property "Reference" "R12"
+			(at 146.558 90.6779 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0805W8F1001T5E"
+			(at 146.558 93.2179 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "jlclib:R0805"
+			(at 152.4 91.948 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_1KR-1001-1_C17513.html"
+			(at 154.94 91.948 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1KΩ (1001) ±1%"
+			(at 144.78 91.948 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(厚声)"
+			(at 157.48 91.948 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F1001T5E"
+			(at 160.02 91.948 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C17513"
+			(at 162.56 91.948 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "95ba962c-91d9-4d03-b19c-67158070a538")
+		)
+		(pin "1"
+			(uuid "dab926e2-f63b-4daf-b249-fee384daa1bb")
+		)
+		(instances
+			(project "pcb-moduloDidaticoSCADA"
+				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/f1226fa3-f7d0-4ae3-8454-02e618f0f28b"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "a_jlclib:0805W8F1001T5E")
+		(at 144.78 81.788 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "71f1d933-5a9f-4b89-be8b-efffa5e808eb")
+		(property "Reference" "R11"
+			(at 147.32 80.5179 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0805W8F1001T5E"
+			(at 147.32 83.0579 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "jlclib:R0805"
+			(at 152.4 81.788 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_1KR-1001-1_C17513.html"
+			(at 154.94 81.788 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1KΩ (1001) ±1%"
+			(at 144.78 81.788 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(厚声)"
+			(at 157.48 81.788 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F1001T5E"
+			(at 160.02 81.788 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C17513"
+			(at 162.56 81.788 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "60818a0f-ee98-4c8c-b0ee-9da27abc717b")
+		)
+		(pin "1"
+			(uuid "13fa6533-460f-4ce6-85d9-10b6f3019109")
+		)
+		(instances
+			(project "pcb-moduloDidaticoSCADA"
+				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/f1226fa3-f7d0-4ae3-8454-02e618f0f28b"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 208.28 122.428 0)
 		(unit 1)
@@ -2950,103 +3144,6 @@
 			(project "PCB_catraca_IFF"
 				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/f1226fa3-f7d0-4ae3-8454-02e618f0f28b"
 					(reference "#PWR036")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "a_jlclib:0603WAF1001T5E")
-		(at 144.78 91.948 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "744e7f44-fbe9-4360-b573-f9c98e8f9807")
-		(property "Reference" "R12"
-			(at 147.32 90.6779 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "0603WAF1001T5E"
-			(at 147.32 93.2179 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "jlclib:R0603"
-			(at 152.4 91.948 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_1KR-1001-1_C21190.html"
-			(at 154.94 91.948 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1KΩ (1001) ±1%"
-			(at 144.78 91.948 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 157.48 91.948 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "0603WAF1001T5E"
-			(at 160.02 91.948 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C21190"
-			(at 162.56 91.948 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7be5a0b1-644d-4b55-9b19-97af1a6ebf69")
-		)
-		(pin "1"
-			(uuid "c3004afb-0816-4a65-8a3a-d1661a1ee2be")
-		)
-		(instances
-			(project "pcb-moduloDidaticoSCADA"
-				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/f1226fa3-f7d0-4ae3-8454-02e618f0f28b"
-					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -3128,7 +3225,7 @@
 	)
 	(symbol
 		(lib_id "a_jlclib:0603WAF4701T5E")
-		(at 167.64 60.198 90)
+		(at 167.64 83.058 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3137,7 +3234,7 @@
 		(fields_autoplaced yes)
 		(uuid "839c5c3a-a74f-4bd6-8542-4f6e92f96952")
 		(property "Reference" "R15"
-			(at 169.926 58.9279 90)
+			(at 169.926 81.7879 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3146,7 +3243,7 @@
 			)
 		)
 		(property "Value" "0603WAF4701T5E"
-			(at 169.926 61.4679 90)
+			(at 169.926 84.3279 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3155,7 +3252,7 @@
 			)
 		)
 		(property "Footprint" "jlclib:R0603"
-			(at 175.26 60.198 0)
+			(at 175.26 83.058 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3164,7 +3261,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_4-7KR-4701-1_C23162.html"
-			(at 177.8 60.198 0)
+			(at 177.8 83.058 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3173,7 +3270,7 @@
 			)
 		)
 		(property "Description" "4.7KΩ (4701) ±1%"
-			(at 167.64 60.198 0)
+			(at 167.64 83.058 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3182,7 +3279,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 180.34 60.198 0)
+			(at 180.34 83.058 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3191,7 +3288,7 @@
 			)
 		)
 		(property "MPN" "0603WAF4701T5E"
-			(at 182.88 60.198 0)
+			(at 182.88 83.058 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3200,7 +3297,7 @@
 			)
 		)
 		(property "LCSC Part" "C23162"
-			(at 185.42 60.198 0)
+			(at 185.42 83.058 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3225,7 +3322,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 167.64 77.978 0)
+		(at 167.64 88.138 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3234,7 +3331,7 @@
 		(fields_autoplaced yes)
 		(uuid "85d3ef3d-c83f-4c1d-b01a-132bfeb11a3b")
 		(property "Reference" "#PWR034"
-			(at 167.64 84.328 0)
+			(at 167.64 94.488 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3243,7 +3340,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 167.64 83.058 0)
+			(at 167.64 93.218 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3251,7 +3348,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 167.64 77.978 0)
+			(at 167.64 88.138 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3260,7 +3357,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 77.978 0)
+			(at 167.64 88.138 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3269,7 +3366,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 167.64 77.978 0)
+			(at 167.64 88.138 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3519,200 +3616,6 @@
 		)
 	)
 	(symbol
-		(lib_id "a_jlclib:0603WAF1001T5E")
-		(at 144.78 128.778 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c202102d-8281-43b0-b7c1-39ee443fd7bd")
-		(property "Reference" "R13"
-			(at 147.32 127.5079 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "0603WAF1001T5E"
-			(at 147.32 130.0479 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "jlclib:R0603"
-			(at 152.4 128.778 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_1KR-1001-1_C21190.html"
-			(at 154.94 128.778 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1KΩ (1001) ±1%"
-			(at 144.78 128.778 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 157.48 128.778 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "0603WAF1001T5E"
-			(at 160.02 128.778 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C21190"
-			(at 162.56 128.778 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e26133ab-dc76-423b-b0c2-3866801bdc63")
-		)
-		(pin "1"
-			(uuid "1be3aafb-c240-42ba-a2d4-bdf6f0a0c428")
-		)
-		(instances
-			(project "pcb-moduloDidaticoSCADA"
-				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/f1226fa3-f7d0-4ae3-8454-02e618f0f28b"
-					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "a_jlclib:0603WAF1001T5E")
-		(at 144.78 138.938 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d3b5f0a8-8485-4f6c-a30b-1bb25a9001d6")
-		(property "Reference" "R14"
-			(at 147.32 137.6679 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "0603WAF1001T5E"
-			(at 147.32 140.2079 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "jlclib:R0603"
-			(at 152.4 138.938 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_1KR-1001-1_C21190.html"
-			(at 154.94 138.938 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1KΩ (1001) ±1%"
-			(at 144.78 138.938 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 157.48 138.938 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "0603WAF1001T5E"
-			(at 160.02 138.938 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C21190"
-			(at 162.56 138.938 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d1d826d2-c642-4f26-a22f-2a4277f82e7e")
-		)
-		(pin "1"
-			(uuid "166cbb1b-1dcc-44fa-8963-5fe08f9b9a95")
-		)
-		(instances
-			(project "pcb-moduloDidaticoSCADA"
-				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/f1226fa3-f7d0-4ae3-8454-02e618f0f28b"
-					(reference "R14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 144.78 144.018 0)
 		(unit 1)
@@ -3773,6 +3676,103 @@
 			(project "pcb-moduloDidaticoSCADA"
 				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/f1226fa3-f7d0-4ae3-8454-02e618f0f28b"
 					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "a_jlclib:0805W8F1001T5E")
+		(at 144.78 138.938 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e655de76-3539-4da4-9f81-cdeeddf2af2e")
+		(property "Reference" "R14"
+			(at 147.066 137.6679 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0805W8F1001T5E"
+			(at 147.066 140.2079 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "jlclib:R0805"
+			(at 152.4 138.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_1KR-1001-1_C17513.html"
+			(at 154.94 138.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1KΩ (1001) ±1%"
+			(at 144.78 138.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(厚声)"
+			(at 157.48 138.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F1001T5E"
+			(at 160.02 138.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C17513"
+			(at 162.56 138.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d37f5e07-792f-4c2d-86ab-6ab23b1bc682")
+		)
+		(pin "1"
+			(uuid "d8319cbb-610c-4927-a7c7-a3cf1a424584")
+		)
+		(instances
+			(project "pcb-moduloDidaticoSCADA"
+				(path "/d871af36-cd7a-4e62-8016-cc5e63560ec7/f1226fa3-f7d0-4ae3-8454-02e618f0f28b"
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -3850,7 +3850,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 167.64 124.968 0)
+		(at 167.64 135.128 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3859,7 +3859,7 @@
 		(fields_autoplaced yes)
 		(uuid "f8b7e378-25bd-41b1-9938-73cf4b5b4a95")
 		(property "Reference" "#PWR035"
-			(at 167.64 131.318 0)
+			(at 167.64 141.478 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3868,7 +3868,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 167.64 130.048 0)
+			(at 167.64 140.208 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3876,7 +3876,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 167.64 124.968 0)
+			(at 167.64 135.128 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3885,7 +3885,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 124.968 0)
+			(at 167.64 135.128 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3894,7 +3894,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 167.64 124.968 0)
+			(at 167.64 135.128 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -115,6 +115,17 @@ A tabela abaixo relaciona cada funcionalidade da PCB ao pino do NodeMCU e ao reg
 | DE + RE (direção) | D4 | GPIO2 |
 
 ---
+TIPO       |     DEVICE     | RANGE  |MODBUS
+SD1        |BUZZER - PONTE H| 0 1    |COIL 00001
+SD2        |RELE - PONTE H  | 0 1    |COIL 00002
+PWM1       |SERVO - AZIMUTE | 0~1023 |H.R. 40001
+PWM2       |SERVO - ELEVAÇÃO| 0~1023 |H.R. 40002
+PMW3       |RESISTÊNCIA     | 0~1023 |H.R. 40003
+ED1        |SW SECO - SETUP | 0 1    |D.I. 10001
+ED2        |SW SECO         | 0 1    |D.I. 10002
+EA0        |POTENCIÔMETRO   | 0~1023 |I.R. 30001
+TEMPERATURA|DS18B20         | oC X 10|I.R. 30002
+---
 
 ## 🔌 Diagrama de Blocos da PCB
 

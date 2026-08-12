@@ -1,4 +1,4 @@
-27439792991677334
+27441577279310922
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -107949,6 +107949,13 @@ R0603
 jlclib
 R0805
 4.7KΩ (4701) ±1%
+
+0
+2
+2
+jlclib
+R1206
+1KΩ (1001) ±1%
 
 0
 2
